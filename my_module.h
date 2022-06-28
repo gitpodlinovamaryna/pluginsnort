@@ -23,10 +23,10 @@ class MyModule : public snort::module
         return GID_MY;
     } 
 
-    const snort::RuleMap* get_rules() const override;
-    const PegInfo* get_pegs() const override;
-    PegCount* get_counts() const override;
-    snort::ProfileStats* get_profile() const override;
+    //const snort::RuleMap* get_rules() const override;
+    //const PegInfo* get_pegs() const override;
+   // PegCount* get_counts() const override;
+    //snort::ProfileStats* get_profile() const override;
     
     Usage get_usage() const override
     {
