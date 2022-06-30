@@ -1,4 +1,4 @@
-#ifdef MY_MODULE_H
+#ifndef MY_MODULE_H
 #define MY_MODULE_H
 
 // Interface
@@ -13,7 +13,7 @@
 extern THREAD_LOCAL snort::ProfileStats myPerfStats;
 
 
-class MyModule : public snort::module
+class MyModule : public snort::Module
 {
     MyModule();
     ~MyModule() override;

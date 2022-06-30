@@ -1,11 +1,8 @@
-set( FILE_LIST
-my_module.h
-my_module.cc
-${MY_INCLUDES}
-)
+cmake_minimum_required(VERSION 3.10.2)
 
-add_library( my OBJECT ${FILE_LIST})
+project(myfirstplugin)
 
-install(FILES ${MY_INCLUDES}
-    DESTINATION "${INCLUDE_INSTALL_PATH/service_inspectors/ssl/}"
-)
+add_library( myfirstplugin SHARED my_module.cc my_module.h)
+
+target_include_directories(myfirstplugin PUBLIC /usr/local/include/snort)
+

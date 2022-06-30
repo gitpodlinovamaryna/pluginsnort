@@ -1,16 +1,11 @@
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include "my_module.h"
 
-using namespace snort;
 
-MyModule::MyModule() : Module(MY_NAME, MY_HELP)
+snort::MyModule::MyModule() : Module(MY_NAME, MY_HELP)
 {
 }
 
-MyModule::~MyModule(){}
+snort::MyModule::~MyModule(){}
 //static const RuleMap My_rules[] =
 //{
 //    { 0, nullptr }
